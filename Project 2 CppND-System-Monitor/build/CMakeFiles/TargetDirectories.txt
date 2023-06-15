@@ -1,3 +1,0 @@
-/workspace/home/CppND-System-Monitor/build/CMakeFiles/rebuild_cache.dir
-/workspace/home/CppND-System-Monitor/build/CMakeFiles/monitor.dir
-/workspace/home/CppND-System-Monitor/build/CMakeFiles/edit_cache.dir
