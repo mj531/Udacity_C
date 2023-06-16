@@ -7,16 +7,15 @@
 // #include <chrono> //alternative solution
 using std::string;
 
-#define sec_in_min 60
-#define min_in_hr 60
-#define sec_in_hr sec_in_min * min_in_hr
-
 // TODO: Complete this helper function
 // INPUT: Long int measuring seconds
 // OUTPUT: HH:MM:SS
 // REMOVE: [[maybe_unused]] once you define the function
 string Format::ElapsedTime(long seconds) { 
     int hh, mm, ss;
+    const int sec_in_min = 60;
+    const int min_in_hr = 60;
+    const int sec_in_hr = min_in_hr * sec_in_min;
     std::stringstream out;
     
     hh = seconds / sec_in_hr;
