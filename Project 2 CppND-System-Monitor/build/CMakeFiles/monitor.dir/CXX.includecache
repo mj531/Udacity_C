@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/format.h
+string
+-
+
+/workspace/home/CppND-System-Monitor-1/src/format.cpp
+string
+-
+sstream
+-
+iomanip
+-
+format.h
+/workspace/home/CppND-System-Monitor-1/src/format.h
+
