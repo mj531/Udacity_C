@@ -44,7 +44,79 @@ ChatBot::~ChatBot()
 
 //// STUDENT CODE
 ////
+//TASK2
+// Copy Constructor
+ChatBot::ChatBot(const ChatBot &source)
+{
+    std::cout << "ChatBot Copy Constructor" << std::endl;
+    //remove and declare in the scope
+    if (_image != NULL) 
+    {
+        delete _image;
+    }
+    //allocate an image in heap using another image
+    _image = new wxBitmap(*source._image);
+    _chatLogic = source._chatLogic;
+    _rootNode = source._rootNode;
+    _currentNode = source._currentNode;
 
+}
+
+// Copy Assignment Operator
+ChatBot& ChatBot::operator=(const ChatBot &source)
+{
+    std::cout << "ChatBot Copy Assigning Operator" << std::endl;
+    // make sure not self-assign
+    if (this == &source)
+        return *this;
+    //remove and declare in the scope
+    if (_image != NULL) 
+    {
+        delete _image;
+    }
+
+    _image = new wxBitmap(*source._image);
+    _chatLogic = source._chatLogic;
+    _rootNode = source._rootNode;
+    _currentNode = source._currentNode;
+
+    return *this;
+}
+
+//Move Constructor
+ChatBot::ChatBot(ChatBot &&source)
+{
+    std::cout << "ChatBot Move Constructor" << std::endl;
+    _image = source._image;
+    _chatLogic = source._chatLogic;
+    _rootNode = source._rootNode;
+    _currentNode = source._currentNode;
+
+    source._chatLogic = nullptr;
+    source._rootNode = nullptr;
+    delete source._image;
+    source._image = NULL;
+}
+
+// Move Assignment Operator
+ChatBot& ChatBot::operator=(ChatBot &&source)
+{
+    std::cout << "ChatBot Copy Assigning Operator" << std::endl;
+    // make sure not self-assign
+    if (this == &source)
+        return *this;
+    delete _image;
+    _image = source._image;
+    _chatLogic = source._chatLogic;
+    _rootNode = source._rootNode;
+    _currentNode = source._currentNode;
+
+    source._chatLogic = nullptr;
+    source._rootNode = nullptr;
+    delete source._image;
+    source._image = NULL;
+    return *this;
+}
 ////
 //// EOF STUDENT CODE
 

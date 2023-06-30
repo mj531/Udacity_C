@@ -2780,6 +2780,24 @@ typeinfo
 
 /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0/wx/setup.h
 
+/workspace/home/CppND-Memory-Management-Chatbot/src/chatbot.cpp
+iostream
+-
+random
+-
+algorithm
+-
+ctime
+-
+chatlogic.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/chatlogic.h
+graphnode.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphnode.h
+graphedge.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphedge.h
+chatbot.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/chatbot.h
+
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatbot.h
 wx/bitmap.h
 -
@@ -2788,6 +2806,8 @@ string
 
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatgui.h
 wx/wx.h
+-
+memory
 -
 
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatlogic.cpp
@@ -2813,6 +2833,8 @@ chatbot.h
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatbot.h
 chatlogic.h
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatlogic.h
+memory
+-
 
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatlogic.h
 vector
@@ -2822,11 +2844,23 @@ string
 chatgui.h
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatgui.h
 
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphedge.cpp
+graphnode.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphnode.h
+graphedge.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphedge.h
+
 /workspace/home/CppND-Memory-Management-Chatbot/src/graphedge.h
 vector
 -
 string
 -
+
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphnode.cpp
+graphedge.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphedge.h
+graphnode.h
+/workspace/home/CppND-Memory-Management-Chatbot/src/graphnode.h
 
 /workspace/home/CppND-Memory-Management-Chatbot/src/graphnode.h
 vector
@@ -2835,4 +2869,6 @@ string
 -
 chatbot.h
 /workspace/home/CppND-Memory-Management-Chatbot/src/chatbot.h
+memory
+-
 
