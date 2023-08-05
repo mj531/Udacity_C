@@ -32,11 +32,30 @@ In this project, you can build your own C++ application or extend this Snake gam
 
 
 ## Project Description
-Wall feature has been implemented which if the snake runs into the wall, it results the end of the game. CMakeLists.txt has been updated to include `wall.cpp` as  
+Wall feature has been implemented which if the snake runs into the wall, it results the end of the game. CMakeLists.txt has been updated to include `wall.cpp` as well as `game.h`, `renderer.h`, `snake.h`, and `main.cpp` all have been modified to adapt wall feature.
 
-* Loops, Functions, I/O: `wall.cpp`.
-* Object Orientaed Programming: `wall.h`, `game.h`, `renderer.h`, `snake.h`, and `main.cpp`.
-* Memory Mangement: In `main.cpp`, `renderer` and `game` functions use pass-by-reference for wall object.
+## Addressed Rubric Points
+Loops, Functions, I/O: 
+| Criteria  | Specifications | Related Files | 
+| ------------- | ------------- | ------------- |
+| The project demonstrates an understanding of C++ functions and control structures. | A variety of control structures are used in the project. The project code is clearly organized into functions. | `wall.cpp` and `snake.cpp`|
+
+Object Orientaed Programming: 
+| Criteria  | Specifications | Related Files | 
+| ------------- | ------------- | ------------- |
+| The project uses Object Oriented Programming techniques. | The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks. | `wall.h` and `wall.cpp` |
+| Classes use appropriate access specifiers for class members. | All class data members are explicitly specified as public, protected, or private. | `wall.h` and `wall.cpp` |
+| Class constructors utilize member initialization lists. | All class members that are set to argument values are initialized through member initialization lists. | `wall.h` |
+| Classes abstract implementation details from their interfaces. | All class member functions document their effects, either through function names, comments, or formal documentation. Member functions do not change program state in undocumented ways. | `wall.h` and `wall.cpp` |
+| Classes encapsulate behavior. | Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions. | `wall.h` |
+
+
+Memory Mangement: In `main.cpp`, `renderer` and `game` functions use pass-by-reference for wall object.
+
+| Criteria  | Specifications | Related Files | 
+| ------------- | ------------- | ------------- |
+| The project makes use of references in function declarations.  | At least two variables are defined as references, or two functions use pass-by-reference in the project code. | `renderer.cpp` and `game.cpp` |
+
 
 ## CC Attribution-ShareAlike 4.0 International
 
